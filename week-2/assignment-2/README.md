@@ -5,11 +5,11 @@ Part 1 focuses on syntax errors and semantic behavior, while Part 2 demonstrates
 
 ## 📚 Table of Contents
 
-- [Part 1: Analyzing Syntax and Semantics](#part-1-analyzing-syntax-and-semantics)
-  - [Section 1: Syntax Errors](#section-1-syntax-errors)
-  - [Section 2: Type Systems, Scopes, and Semantic Differences](#section-2-type-systems-scopes-and-semantic-differences)
-- [Part 2: Memory Management](#part-2-memory-management)
-  - [Section 3: Memory Handling in Rust, Java, and C++](#section-3-memory-handling-in-rust-java-and-c++)
+- [Part 1: Analyzing Syntax and Semantics](#-part-1-analyzing-syntax-and-semantics)
+  - [Section 1: Syntax Errors](#-section-1-syntax-errors)
+  - [Section 2: Type Systems, Scopes, and Semantic Differences](#-section-2-type-systems-scopes-and-semantic-differences)
+- [Part 2: Memory Management](#-part-2-memory-management)
+  - [Section 3: Memory Handling in Rust, Java, and C++](#-section-3-memory-handling-in-rust-java-and-c++)
 
 ## 📌 Part 1: Analyzing Syntax and Semantics
 
