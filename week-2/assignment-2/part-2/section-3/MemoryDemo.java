@@ -61,5 +61,7 @@ public class JavaMemory {
         System.gc();
 
         System.out.println("Back to main.");
+        System.out.println("Total Memory: " + Runtime.getRuntime().totalMemory());
+        System.out.println("Free Memory: " + Runtime.getRuntime().freeMemory());
     }
 }
