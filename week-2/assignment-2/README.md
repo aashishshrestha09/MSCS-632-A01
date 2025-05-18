@@ -48,8 +48,8 @@ Wrote programs to highlight:
 - **Java**: Garbage collection behavior
 - **C++**: Manual allocation and deallocation (with new/delete)
 
-| Language | File          |
-| :------- | :------------ |
-| Rust     | `memory.rs`   |
-| Java     | `memory.java` |
-| C++      | `memory.cpp`  |
+| Language | File              |
+| :------- | :---------------- |
+| Rust     | `memory.rs`       |
+| Java     | `MemoryDemo.java` |
+| C++      | `memory.cpp`      |
