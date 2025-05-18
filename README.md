@@ -32,7 +32,7 @@ The code examples span multiple programming languages demonstrating core concept
         ├── part-2
         │   └── section-3
         │       ├── memory.cpp
-        │       ├── memory.java
+        │       ├── MemoryDemo.java
         │       └── memory.rs
         └── README.md
 
