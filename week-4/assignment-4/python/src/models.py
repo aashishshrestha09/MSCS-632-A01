@@ -4,7 +4,7 @@ class Employee:
 
     Attributes:
         name (str): The name of the employee.
-        preferences (list): A list of shift preferences in ranked order (e.g. ['morning', 'afternoon', 'evening']).
+        preferences (list): A list of shift preferences in ranked order (e.g. ['Morning', 'Afternoon', 'Evening']).
         preference_rank (dict): A mapping of shift to its preference rank (0-based index).
         assigned_days (set): A set of day names or identifiers when the employee is assigned to work.
     """
