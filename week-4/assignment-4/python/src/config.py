@@ -42,6 +42,6 @@ config = {
     ),
     "shifts": load_env_var(
         "SHIFTS",
-        ["morning", "afternoon", "evening"],
+        ["Morning", "Afternoon", "Evening"],
     ),
 }
