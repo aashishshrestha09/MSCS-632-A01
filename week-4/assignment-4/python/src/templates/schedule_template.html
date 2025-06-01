@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Employee Weekly Schedule</title>
+    <style>
+        body {
+            margin: 40px;
+            color: #333;
+            background-color: #fafafa;
+            line-height: 1.5;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #222;
+            font-size: 28px;
+        }
+
+        .legend {
+            margin: 0 auto 30px;
+            text-align: center;
+            padding: 12px 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            max-width: 600px;
+        }
+
+        .legend strong {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 17px;
+        }
+
+        .legend span {
+            margin: 0 12px;
+            font-size: 18px;
+            vertical-align: middle;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto 40px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 14px 12px;
+            text-align: center;
+            font-size: 15px;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            font-weight: 600;
+        }
+
+        .shift-cell {
+            font-weight: bold;
+            background-color: #e8e8e8;
+            color: #333;
+        }
+
+        .employee-entry {
+            display: block;
+            margin: 6px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Weekly Employee Shift Schedule</h1>
+
+    <div class="legend" aria-label="Shift Preference Legend">
+        <strong>Preference Legend:</strong>
+        <span>⭐️ Top Preference</span>
+        <span>2️⃣ Second Preference</span>
+        <span>3️⃣ Third Preference</span>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Shift</th>
+                {% for day in days %}
+                    <th>{{ day }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for shift in shifts %}
+            <tr>
+                <td class="shift-cell">{{ shift.capitalize() }}</td>
+                {% for day in days %}
+                <td>
+                    {% for emp_name in schedule[day][shift] %}
+                        {% set emp = employees[emp_name] %}
+                        {% set pref_index = emp.preferences.index(shift) if shift in emp.preferences else 99 %}
+                        <div class="employee-entry">
+                            {{ emp_name }}
+                            {% if pref_index == 0 %}
+                                ⭐️
+                            {% elif pref_index == 1 %}
+                                2️⃣
+                            {% elif pref_index == 2 %}
+                                3️⃣
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                </td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+</html>
