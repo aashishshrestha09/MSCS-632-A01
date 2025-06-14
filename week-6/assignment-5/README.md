@@ -56,5 +56,5 @@ The C++ and Smalltalk implementations demonstrate how these OOP concepts are app
 
 ## How to Use
 
-- For C++, please refer to the [RideSharingSystem_Cpp/README.md](./RideSharingSystem_Cpp/README.md) for build and run instructions.
-- For Smalltalk, please refer to the [Smalltalk/README.md](./RideSharingSystem_Smalltalk/README.md) for setup and usage details.
+- For C++, see the [README.md](RideSharingSystem_Cpp/README.md) in the `RideSharingSystem_Cpp` folder for build and run instructions.
+- For Smalltalk, see the [README.md](RideSharingSystem_Smalltalk/README.md) in the `RideSharingSystem_Smalltalk` folder for setup and usage instructions.
