@@ -1,0 +1,17 @@
+# Compiled binaries
+rideshare
+
+# Logs and result files
+ride_results.txt
+ride.log
+
+# Module cache (optional)
+vendor/
+
+# IDE and OS files
+.idea/
+*.iml
+.DS_Store
+
+# Go test cache
+*.test

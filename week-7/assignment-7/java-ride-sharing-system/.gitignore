@@ -1,0 +1,16 @@
+# Compiled class files
+/out/
+
+# Logs and result files
+ride_results.txt
+ride.log
+
+# IDE and OS files
+.idea/
+*.iml
+.DS_Store
+
+# Build files
+*.jar
+*.war
+*.ear
