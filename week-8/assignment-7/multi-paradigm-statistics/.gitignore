@@ -1,0 +1,65 @@
+# =========================
+# General
+# =========================
+*.log
+*.tmp
+*.temp
+*.swp
+*.DS_Store
+Thumbs.db
+
+# =========================
+# C Build Artifacts
+# =========================
+# Executables and object files
+*.o
+*.out
+*.exe
+statistics
+
+# =========================
+# OCaml / Dune Build Artifacts
+# =========================
+_ocaml/
+_dune/
+_build/
+*.cm[ioxyl]
+*.o
+*.a
+*.so
+*.cmi
+*.cmo
+*.cmx
+*.annot
+
+# =========================
+# Python
+# =========================
+# Virtual environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+dist/
+build/
+*.egg
+*.manifest
+*.spec
+
+# =========================
+# IDE / Editor Files
+# =========================
+.vscode/
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
+
+# =========================
+# Misc
+# =========================
+*.bak
+*.orig
