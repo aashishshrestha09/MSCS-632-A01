@@ -21,14 +21,19 @@ This project was completed for **Advanced Programming Languages (MSCS-632-A01)**
 ```bash
 .
 ├── C
-│   ├── Makefile
-│   └── statistics.c
-├── Makefile
+│   ├── Makefile                 # Build instructions for C implementation
+│   └── statistics.c             # Procedural C program
+├── Makefile                     # Root Makefile to build/run all implementations
 ├── OCaml
-│   └── statistics.ml
+│   └── statistics.ml            # Functional OCaml program
 ├── Python
-│   └── statistics_calculator.py
-└── README.md
+│   └── statistics_calculator.py # OOP Python program
+├── README.md                    # Project documentation and instructions
+└── screenshots                  # Screenshots of program outputs and cleanup process
+    ├── c_output.png
+    ├── cleanup_output.png
+    ├── ocaml_output.png
+    └── python_output.png
 ```
 
 ## Prerequisites
